@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/FreeCrmBDDFramework.iml" filepath="$PROJECT_DIR$/FreeCrmBDDFramework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/QualiTestBDD.iml" filepath="$PROJECT_DIR$/QualiTestBDD.iml" />
     </modules>
   </component>
 </project>

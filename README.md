@@ -25,7 +25,7 @@ This Project can run using TestRunner file which is under src\main\java\MyRunner
 Right Click on the TestRunner and Click on Run TestRunner option.
 We are using tags() for running the feature file 
 
-for intial run use: mvn clean install 
+for intial run use the command : mvn clean install
 for test run: Run TestRunner
 
 

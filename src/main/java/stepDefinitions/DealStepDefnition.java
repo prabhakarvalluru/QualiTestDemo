@@ -7,6 +7,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import cucumber.api.java.en.And;
+import org.apache.commons.exec.OS;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
@@ -16,16 +17,25 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import junit.framework.Assert;
+import sun.plugin2.os.windows.Windows;
 
 
 public class DealStepDefnition {
 
 	WebDriver driver;
 	String finalValue;
+	String os = System.getProperty("os.name").toLowerCase();
+
 	@Given("^I add four different products to my wishlist$")
 	public void iAddFourDifferentProductsToMyWishlist() throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "src\\main\\resources\\chromedriver.exe");
-		driver = new ChromeDriver();
+		if(os.contains("windows")){
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver.exe");
+			driver = new ChromeDriver();
+		}
+		else if(os.contains("mac")){
+			System.setProperty("webdriver.chrome.driver", "src/main/resources/chromedriver");
+			driver = new ChromeDriver();
+		}
 		driver.manage().window().maximize();
 		driver.get("https://testscriptdemo.com/");
 		Thread.sleep(3000);
