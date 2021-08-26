@@ -58,42 +58,42 @@ formatter.match({
   "location": "DealStepDefnition.iAddFourDifferentProductsToMyWishlist()"
 });
 formatter.result({
-  "duration": 27285348200,
+  "duration": 37352941240,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefnition.iViewMyWishlistTable()"
 });
 formatter.result({
-  "duration": 645571800,
+  "duration": 441489395,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefnition.iFindTotalFourSelectedItemsInMyWishlist()"
 });
 formatter.result({
-  "duration": 33540800,
+  "duration": 13852114,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefnition.iSearchForLowestPriceProduct()"
 });
 formatter.result({
-  "duration": 3299862600,
+  "duration": 3144741389,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefnition.iAmAbleToVerifyTheItemInMyCart()"
 });
 formatter.result({
-  "duration": 1586656400,
+  "duration": 374506927,
   "status": "passed"
 });
 formatter.match({
   "location": "DealStepDefnition.iCloseTheBrowser()"
 });
 formatter.result({
-  "duration": 175856700,
+  "duration": 135829515,
   "status": "passed"
 });
 });
